@@ -1,0 +1,65 @@
+.homescreenContainer {
+  background-color: #282c34;
+  display: flex;
+  width: 100vw;
+  justify-content: space-evenly;
+}
+
+.homescreenContainer {
+  font-family: "Nunito";
+  color: #fff;
+  font-style: normal;
+}
+.homescreenContainer h2 {
+  font-size: 38px;
+  line-height: 48px;
+  font-weight: 800;
+  margin: 30px 0px 0px 0px;
+}
+
+.homescreenContainer h3 {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+}
+
+.homescreenContainer span {
+  display: table;
+}
+
+.homescreenContainer button {
+  width: 241px;
+  height: 48px;
+  color: #fff;
+  background-color: #fd377e;
+  border: 2px solid #fd377e;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+.homescreenContainer button:hover {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .bgImage {
+    display: block;
+    width: 400px;
+    height: 400px;
+  }
+
+  .appInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: initial;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .bgImage {
+    display: block;
+    width: 600px;
+    height: 600px;
+  }
+}

@@ -1,0 +1,88 @@
+.Form {
+  font-family: "Inter";
+  font-weight: 400;
+  font-style: normal;
+}
+
+.Form span {
+  font-size: 12px;
+  line-height: 20px;
+  color: #868e96;
+  margin-top: -13px;
+  margin-bottom: 13px;
+}
+
+.Form form {
+  display: flex;
+  flex-flow: column wrap;
+  width: 80vw;
+  height: fit-content;
+  background: #ffffff;
+  border: 1px solid #e9ecef;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 15px 10px;
+}
+
+.Form label {
+  font-size: 12px;
+  line-height: 22px;
+  color: #212529;
+}
+
+.Form input {
+  background: #f8f9fa;
+  border: 2px solid #f8f9fa;
+  box-sizing: border-box;
+  border-radius: 8px;
+  font-size: 16px;
+  line-height: 26px;
+  color: #868e96;
+  padding: 0 10px;
+  margin: 0px 0px 15px;
+}
+
+.halfMiddle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  height: 30px;
+  color: #868e96;
+  border: 2px solid #f8f9fa;
+  background: #f8f9fa;
+  margin: 0px 0px 15px;
+}
+
+.split {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.FormSplit {
+  width: 50%;
+  margin: 0;
+}
+
+.Form button {
+  width: 280px;
+  height: 48px;
+  background: #fd377e;
+  border: 2px solid #fd377e;
+  color: #fff;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .lefPanel {
+    width: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+}
