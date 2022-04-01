@@ -23,16 +23,62 @@
 
 .mainContainer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   margin: 15px auto;
   justify-content: center;
 }
 
+.resumoFinanceiro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.resumoFinanceiro h3 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+}
+.rightPanel {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 80vw;
+  height: -moz-fit-content;
+  height: fit-content;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin: -15px auto;
+  font-family: "Nunito";
+  font-style: normal;
+  color: #212529;
+}
+
+.filtros {
+  display: flex;
+}
 @media screen and (min-width: 768px) {
   .profilePageHeader button {
     padding: 15px;
   }
+  .mainContainer {
+    flex-direction: column;
+  }
 }
 
 @media screen and (min-width: 1024px) {
+  .mainContainer {
+    flex-direction: row;
+    margin: 20px 120px;
+  }
+  .leftPanel {
+    margin-right: 60px;
+  }
+  .rightPanel {
+    width: 360px;
+  }
+  .resumoFinanceiro h3 {
+    width: 120px;
+  }
 }

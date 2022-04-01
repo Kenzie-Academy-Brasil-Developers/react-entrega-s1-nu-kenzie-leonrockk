@@ -22,6 +22,7 @@
   box-sizing: border-box;
   border-radius: 4px;
   padding: 15px 10px;
+  margin: auto;
 }
 
 .Form label {
@@ -30,6 +31,9 @@
   color: #212529;
 }
 
+.formDescription {
+  margin: 0px 0px 15px;
+}
 .Form input {
   background: #f8f9fa;
   border: 2px solid #f8f9fa;
@@ -37,9 +41,8 @@
   border-radius: 8px;
   font-size: 16px;
   line-height: 26px;
-  color: #868e96;
+  color: black;
   padding: 0 10px;
-  margin: 0px 0px 15px;
 }
 
 .halfMiddle {
@@ -52,6 +55,7 @@
   border: 2px solid #f8f9fa;
   background: #f8f9fa;
   margin: 0px 0px 15px;
+  border-radius: 8px;
 }
 
 .split {
@@ -75,6 +79,7 @@
   color: #fff;
   box-sizing: border-box;
   border-radius: 8px;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {
@@ -82,7 +87,28 @@
     width: 50%;
     max-width: 50%;
   }
+  .Form button {
+    margin: auto;
+  }
+  .split {
+    margin: auto;
+  }
 }
 
 @media screen and (min-width: 1024px) {
+  .Form form {
+    width: 360px;
+    max-width: 360px;
+    margin: 0px;
+  }
+  .split {
+    margin: 0px;
+  }
+  .halfMiddle {
+    margin: 0px;
+    width: 95%;
+  }
+  .Form button {
+    margin: 20px auto;
+  }
 }

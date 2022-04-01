@@ -2,6 +2,9 @@ import "./profile.css";
 import kenzieLogoBlack from "../../kenzieLogoBlack.svg";
 import { useNavigate } from "react-router-dom";
 import Form from "../../components/Form";
+import List from "../../components/List";
+import TotalMoney from "../../components/TotalMoney";
+import Button from "../../components/Filtro";
 import { useState } from "react";
 
 function ProfilePage() {
@@ -26,12 +29,39 @@ function ProfilePage() {
       <div className="mainContainer">
         <div className="leftPanel">
           <div className="formContainer">
-            <Form />
+            <Form
+              listTransactions={listTransactions}
+              setListTransactions={setListTransactions}
+            />
           </div>
-          <div className="totalMoneyContainer"></div>
+          <div className="totalMoneyContainer">
+            <TotalMoney listTransactions={listTransactions} />
+          </div>
         </div>
         <div className="rightPanel">
-          <div className="listOfEntries"></div>
+          <div className="resumoFinanceiro">
+            <h3>Resumo Financeiro</h3>
+            {/* <div className="filtros">
+              <Button
+                listTransactions={listTransactions}
+                children={"Todos"}
+              ></Button>
+              <Button
+                listTransactions={listTransactions}
+                children={"Entradas"}
+              ></Button>
+              <Button
+                listTransactions={listTransactions}
+                children={"Saídas"}
+              ></Button>
+            </div> */}
+          </div>
+          <div className="listOfEntries">
+            <List
+              listTransactions={listTransactions}
+              setListTransactions={setListTransactions}
+            />
+          </div>
         </div>
       </div>
     </div>

@@ -1,0 +1,60 @@
+.totalContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 80vw;
+  height: fit-content;
+  background: #ffffff;
+  border: 1px solid #e9ecef;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 8px;
+  margin: 10px auto;
+  font-family: "Nunito";
+  font-style: normal;
+  color: #212529;
+}
+
+.totalContainer h3,
+.totalContainer h4,
+.totalContainer p,
+.totalContainer button {
+  margin: 0;
+}
+
+.totalRight {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.totalRight h4 {
+  margin-right: 30px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 22px;
+  color: #fd377e;
+}
+
+.totalLeft {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.totalLeft h3 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.totalLeft p {
+  color: #868e96;
+}
+
+@media screen and (min-width: 1024px) {
+  .totalContainer {
+    width: 360px;
+  }
+}

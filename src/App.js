@@ -1,13 +1,11 @@
 import logo from "./logo.svg";
 
 import "./App.css";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ProfilePage from "./pages/profile/profile";
 import HomePage from "./pages/home/home";
 
-
 function App() {
-  
   return (
     <Router>
       <div>

@@ -1,0 +1,28 @@
+.filtroButtonChecked,
+.filtroButtonUnchecked {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 6px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  margin: 0px 2px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  cursor: pointer;
+}
+.filtroButtonUnchecked {
+  background: #e9ecef;
+  border: 1.4px solid #e9ecef;
+  color: #868e96;
+}
+.filtroButtonChecked {
+  background: #fd377e;
+  border: 1.4px solid #fd377e;
+  color: white;
+}
