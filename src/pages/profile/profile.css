@@ -70,13 +70,13 @@
 @media screen and (min-width: 1024px) {
   .mainContainer {
     flex-direction: row;
-    margin: 20px 120px;
+    margin: 20px 240px;
   }
   .leftPanel {
     margin-right: 60px;
   }
   .rightPanel {
-    width: 360px;
+    width: 600px;
   }
   .resumoFinanceiro h3 {
     width: 120px;

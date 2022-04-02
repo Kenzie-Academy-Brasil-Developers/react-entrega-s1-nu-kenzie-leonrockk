@@ -6,6 +6,7 @@ import List from "../../components/List";
 import TotalMoney from "../../components/TotalMoney";
 import Button from "../../components/Filtro";
 import { useState } from "react";
+import emptyList from "../../emptyList.svg";
 
 function ProfilePage() {
   const navigate = useNavigate();
@@ -57,10 +58,14 @@ function ProfilePage() {
             </div> */}
           </div>
           <div className="listOfEntries">
-            <List
-              listTransactions={listTransactions}
-              setListTransactions={setListTransactions}
-            />
+            {listTransactions.length === 0 ? (
+              <img src={emptyList}></img>
+            ) : (
+              <List
+                listTransactions={listTransactions}
+                setListTransactions={setListTransactions}
+              />
+            )}
           </div>
         </div>
       </div>
